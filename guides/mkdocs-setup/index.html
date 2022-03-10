@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.5">
     
     
       
-        <title>About - My Docs</title>
+        <title>Mkdocs Setup Guide (work in progress) - My Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.2d9f7617.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2d9f7617.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -35,7 +35,7 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about" class="md-skip">
+        <a href="#mkdocs-setup-guide-work-in-progress" class="md-skip">
           Skip to content
         </a>
       
@@ -73,7 +73,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="My Docs" class="md-header__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Mkdocs Setup Guide (work in progress)
             
           </span>
         </div>
@@ -171,7 +171,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
+    <a href="../.." title="My Docs" class="md-nav__button md-logo" aria-label="My Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -202,7 +202,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -215,12 +215,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
       
       
       
@@ -243,7 +245,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../guides/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         This looks like a good place to start
       </a>
     </li>
@@ -255,11 +257,100 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../guides/mkdocs-setup/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Mkdocs Setup Guide (work in progress)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Mkdocs Setup Guide (work in progress)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-mkdocs" class="md-nav__link">
+    Install mkdocs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-new-project" class="md-nav__link">
+    Create a new project
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a new project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#see-local-version-of-new-site" class="md-nav__link">
+    See local version of new site
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-github" class="md-nav__link">
+    Initialize GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-mkdocsyml" class="md-nav__link">
+    Update mkdocs.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-to-github-pages" class="md-nav__link">
+    Deploy to GitHub Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visit-site" class="md-nav__link">
+    Visit site
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -279,7 +370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup/" class="md-nav__link">
+      <a href="../../setup/" class="md-nav__link">
         Setup
       </a>
     </li>
@@ -292,65 +383,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          About
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
         About
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#my-name-is-don" class="md-nav__link">
-    My name is Don
-  </a>
-  
-    <nav class="md-nav" aria-label="My name is Don">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#my-beautiful-wife" class="md-nav__link">
-    My beautiful wife
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -382,22 +419,57 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#my-name-is-don" class="md-nav__link">
-    My name is Don
+  <a href="#install-mkdocs" class="md-nav__link">
+    Install mkdocs
   </a>
   
-    <nav class="md-nav" aria-label="My name is Don">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-new-project" class="md-nav__link">
+    Create a new project
+  </a>
+  
+    <nav class="md-nav" aria-label="Create a new project">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#my-beautiful-wife" class="md-nav__link">
-    My beautiful wife
+  <a href="#see-local-version-of-new-site" class="md-nav__link">
+    See local version of new site
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize-github" class="md-nav__link">
+    Initialize GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-mkdocsyml" class="md-nav__link">
+    Update mkdocs.yml
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploy-to-github-pages" class="md-nav__link">
+    Deploy to GitHub Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visit-site" class="md-nav__link">
+    Visit site
+  </a>
   
 </li>
       
@@ -410,18 +482,72 @@
             
           
           <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="../pdf/combined.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
+            <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="../../pdf/combined.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
               
                 
-<a href="https://github.com/leetx1203/test3/docs/about.md" title="Edit this page" class="md-content__button md-icon">
+<a href="https://github.com/leetx1203/test3/docs/guides/mkdocs-setup.md" title="Edit this page" class="md-content__button md-icon">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
 </a>
 
 
 
-<h1 id="about">About<a class="headerlink" href="#about" title="Permanent link">&para;</a></h1>
-<h2 id="my-name-is-don">My name is Don<a class="headerlink" href="#my-name-is-don" title="Permanent link">&para;</a></h2>
-<h3 id="my-beautiful-wife">My beautiful wife <img alt="😄" class="emojione" src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.2.7/assets/png/1f604.png" title=":smile:" /><a class="headerlink" href="#my-beautiful-wife" title="Permanent link">&para;</a></h3>
+<h1 id="mkdocs-setup-guide-work-in-progress">Mkdocs Setup Guide (work in progress)<a class="headerlink" href="#mkdocs-setup-guide-work-in-progress" title="Permanent link">&para;</a></h1>
+<h2 id="install-mkdocs">Install mkdocs<a class="headerlink" href="#install-mkdocs" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>pip install mkdocs
+</code></pre></div>
+<h2 id="create-a-new-project">Create a new project<a class="headerlink" href="#create-a-new-project" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdocs new &lt;my-project&gt;
+<span class="nb">cd</span> &lt;my-project&gt;
+</code></pre></div>
+<h3 id="see-local-version-of-new-site">See local version of new site<a class="headerlink" href="#see-local-version-of-new-site" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>mkdocs serve -a <span class="m">0</span>.0.0.0:8111
+</code></pre></div>
+<h2 id="initialize-github">Initialize GitHub<a class="headerlink" href="#initialize-github" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>git init
+<span class="nb">echo</span> <span class="s2">&quot;# Project Description...&quot;</span> &gt;&gt; README.md
+git add README.md
+git commit -m <span class="s2">&quot;comments on commit&quot;</span>
+git branch -M main
+git remote add origin https://github.com/leetx1203/&lt;repository-name&gt;.git
+git push -u origin main
+</code></pre></div>
+<h2 id="update-mkdocsyml">Update mkdocs.yml<a class="headerlink" href="#update-mkdocsyml" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>site_name: My Docs
+nav:
+  - Home: index.md
+  - Guides:
+      - guides/getting-started.md    
+  - setup.md
+  - about.md
+plugins:
+  - search
+  - git-revision-date #pip install mkdocs-git-revision-date-plugin
+  - pdf-export: #pip install mkdocs-pdf-export-plugin
+      combined: true
+markdown_extensions:  
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.magiclink
+  - pymdownx.keys
+  - toc:
+      permalink: true
+repo_name: Github
+repo_url: https://github.com/leetx1203/&lt;repository-name&gt;/
+edit_uri: &#39;/docs&#39;
+theme: 
+  name: material  
+</code></pre></div>
+<h2 id="deploy-to-github-pages">Deploy to GitHub Pages<a class="headerlink" href="#deploy-to-github-pages" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mkdocs build
+mkdocs gh-deploy
+</code></pre></div>
+<h2 id="visit-site">Visit site<a class="headerlink" href="#visit-site" title="Permanent link">&para;</a></h2>
+<p><a href="https://leetx1203.github.io/">https://leetx1203.github.io/</a><repository-name>/</p>
 
   <hr>
 <div class="md-source-file">
@@ -445,7 +571,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup" rel="prev">
+        <a href="../getting-started/" class="md-footer__link md-footer__link--prev" aria-label="Previous: This looks like a good place to start" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -454,11 +580,26 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Setup
+              This looks like a good place to start
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../../setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Setup" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Setup
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
@@ -482,10 +623,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="../assets/javascripts/bundle.467223ff.min.js"></script>
+      <script src="../../assets/javascripts/bundle.467223ff.min.js"></script>
       
     
   </body>
