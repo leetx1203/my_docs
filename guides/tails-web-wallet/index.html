@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-the-trezor-web-wallet-with-tor-browser-on-tails-411-live" class="md-skip">
+        <a href="#using-trezor-suite-on-tails" class="md-skip">
           Skip to content
         </a>
       
@@ -303,11 +303,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-trezor-web-wallet-with-tor-browser-on-tails-411-live" class="md-nav__link">
-    Using the Trezor web wallet with Tor Browser on Tails 4.11 Live
+  <a href="#using-trezor-suite-on-tails" class="md-nav__link">
+    Using Trezor Suite on Tails
   </a>
   
-    <nav class="md-nav" aria-label="Using the Trezor web wallet with Tor Browser on Tails 4.11 Live">
+    <nav class="md-nav" aria-label="Using Trezor Suite on Tails">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -392,11 +392,11 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-the-trezor-web-wallet-with-tor-browser-on-tails-411-live" class="md-nav__link">
-    Using the Trezor web wallet with Tor Browser on Tails 4.11 Live
+  <a href="#using-trezor-suite-on-tails" class="md-nav__link">
+    Using Trezor Suite on Tails
   </a>
   
-    <nav class="md-nav" aria-label="Using the Trezor web wallet with Tor Browser on Tails 4.11 Live">
+    <nav class="md-nav" aria-label="Using Trezor Suite on Tails">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -431,7 +431,7 @@
 
   <h1>Tails web wallet</h1>
 
-<h2 id="using-the-trezor-web-wallet-with-tor-browser-on-tails-411-live">Using the Trezor web wallet with Tor Browser on Tails 4.11 Live<a class="headerlink" href="#using-the-trezor-web-wallet-with-tor-browser-on-tails-411-live" title="Permanent link">&para;</a></h2>
+<h2 id="using-trezor-suite-on-tails">Using Trezor Suite on Tails<a class="headerlink" href="#using-trezor-suite-on-tails" title="Permanent link">&para;</a></h2>
 <h3 id="maybe-the-only-the-next-two-steps-necessary-for-accessing-the-wallet-in-tails-trezor-suite">Maybe the only the next two steps necessary for accessing the wallet in Tails Trezor Suite<a class="headerlink" href="#maybe-the-only-the-next-two-steps-necessary-for-accessing-the-wallet-in-tails-trezor-suite" title="Permanent link">&para;</a></h3>
 <ol>
 <li>sudo /sbin/iptables -I OUTPUT 3 -o lo -s 127.0.0.1/32 -d 127.0.0.1/32 -p tcp --syn --dport 21325 -m owner --uid-owner amnesia -m conntrack --ctstate NEW -j ACCEPT</li>
