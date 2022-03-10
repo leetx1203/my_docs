@@ -434,27 +434,28 @@
 <h2 id="using-trezor-suite-on-tails">Using Trezor Suite on Tails<a class="headerlink" href="#using-trezor-suite-on-tails" title="Permanent link">&para;</a></h2>
 <h3 id="maybe-the-only-the-next-two-steps-necessary-for-accessing-the-wallet-in-tails-trezor-suite">Maybe the only the next two steps necessary for accessing the wallet in Tails Trezor Suite<a class="headerlink" href="#maybe-the-only-the-next-two-steps-necessary-for-accessing-the-wallet-in-tails-trezor-suite" title="Permanent link">&para;</a></h3>
 <ol>
-<li>sudo /sbin/iptables -I OUTPUT 3 -o lo -s 127.0.0.1/32 -d 127.0.0.1/32 -p tcp --syn --dport 21325 -m owner --uid-owner amnesia -m conntrack --ctstate NEW -j ACCEPT</li>
+<li><div class="highlight"><pre><span></span><code>sudo /sbin/iptables -I OUTPUT <span class="m">3</span> -o lo -s <span class="m">127</span>.0.0.1/32 -d <span class="m">127</span>.0.0.1/32 -p tcp --syn --dport <span class="m">21325</span> -m owner --uid-owner amnesia -m conntrack --ctstate NEW -j ACCEPT
+</code></pre></div></li>
 <li>Enable Tor in Trezor Suite settings</li>
 </ol>
 <p>Copied from (<a href="https://mcudev.github.io/tails-web-wallet.html">https://mcudev.github.io/tails-web-wallet.html</a>)
 This article presents the handful of steps necessary to get the Trezor web wallet (<a href="https://wallet.trezor.io/">https://wallet.trezor.io/</a>) to work with Tor Browser on a Tails 4.11 Live session.</p>
-<div class="highlight"><pre><span></span><code>On the initial Tails setup screen, set an administrative password. This is necessary since root privileges are needed to install the Trezor Bridge package and to set an iptables rule.
+<p>On the initial Tails setup screen, set an administrative password. This is necessary since root privileges are needed to install the Trezor Bridge package and to set an iptables rule.
 Once the Tails Live session finishes starting up, setup your network as usual.
 Open a terminal and run the following commands
-    cd /tmp/
-    wget https://keybase.io/stick/pgp_keys.asc
-    gpg --import pgp_keys.asc
-    wget https://wallet.trezor.io/data/bridge/2.0.29/trezor-bridge_2.0.29_amd64.deb
-    gpg --verify trezor-bridge_2.0.29_amd64.deb
-    sudo dpkg -i trezor-bridge_2.0.29_amd64.deb
-    sudo /sbin/iptables -I OUTPUT 3 -o lo -s 127.0.0.1/32 -d 127.0.0.1/32 -p tcp --syn --dport 21325 -m owner --uid-owner amnesia -m conntrack --ctstate NEW -j ACCEPT
-Navigate to https://wiki.trezor.io/Tor in Tor Browser and follow the instructions to change the FireFox configuration. Since Tails 4.11 uses Tor Browser 10.0, only the configuration for network.proxy.no_proxies_on needs to be set to 127.0.0.1:21325.
-Connect your Trezor device to the computer&#39;s USB port.
-After unlocking and entering your Trezor&#39;s PIN, verify that the udev rules took effect by running
-ls -al /dev/trezor*
-Start Tor Browser and navigate to https://wallet.trezor.io/
+<div class="highlight"><pre><span></span><code>        <span class="nb">cd</span> /tmp/
+        wget https://keybase.io/stick/pgp_keys.asc
+        gpg --import pgp_keys.asc
+        wget https://wallet.trezor.io/data/bridge/2.0.29/trezor-bridge_2.0.29_amd64.deb
+        gpg --verify trezor-bridge_2.0.29_amd64.deb
+        sudo dpkg -i trezor-bridge_2.0.29_amd64.deb
+        sudo /sbin/iptables -I OUTPUT <span class="m">3</span> -o lo -s <span class="m">127</span>.0.0.1/32 -d <span class="m">127</span>.0.0.1/32 -p tcp --syn --dport <span class="m">21325</span> -m owner --uid-owner amnesia -m conntrack --ctstate NEW -j ACCEPT
 </code></pre></div>
+    Navigate to <a href="https://wiki.trezor.io/Tor">https://wiki.trezor.io/Tor</a> in Tor Browser and follow the instructions to change the FireFox configuration. Since Tails 4.11 uses Tor Browser 10.0, only the configuration for network.proxy.no_proxies_on needs to be set to 127.0.0.1:21325.
+    Connect your Trezor device to the computer's USB port.
+    After unlocking and entering your Trezor's PIN, verify that the udev rules took effect by running
+    ls -al /dev/trezor*
+    Start Tor Browser and navigate to <a href="https://wallet.trezor.io/">https://wallet.trezor.io/</a></p>
 <p>Notes</p>
 <p>The sha256sum of trezor-bridge_2.0.29_amd64.deb is 51068a4f7dca66c43e5058aa7e89f27110b533b85c0ece074176586065de4dba.</p>
 <p>The fingerprint of the key that is used to verify the package signature is 86E6792FC27BFD478860C11091F3B339B9A02A3D.</p>
